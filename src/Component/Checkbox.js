@@ -1,12 +1,11 @@
-import React, { useState } from "react";
+import React from "react";
 import styles from "./checkBox.module.css";
 
 
-function Checkbox() {
-  const [check, setcheck] = useState(false);
+function Checkbox({ tour,  image,  video,  }) {
   return (
-    <div className={styles.inputs} onClick={() => setcheck(!check)}>
-      {check ? (
+    <div className={styles.inputs} >
+      {tour || image || video ? (
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="33"

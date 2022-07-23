@@ -1,11 +1,9 @@
 import { Link } from "react-router-dom";
-import { useChoose } from "./context/UserContext";
 import "./Routing.css";
 import ar from './assets/ar.jpg'
 
 
 function Routing() {
-  const val = useChoose();
   return (
     <div className="container">
       <div className="left">

@@ -1,0 +1,23 @@
+.container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+}
+.center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.chooseOne{
+    flex: 1;
+    background-color: rebeccapurple;
+    
+}
+.chooseTwo{
+    flex: 1;
+    background-color: aquamarine;
+}
+.chooseThree{
+    flex: 1;
+    background-color: brown;
+}

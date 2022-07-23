@@ -4,32 +4,34 @@ import Tour from "../assets/Tour";
 import Video from "../assets/Video";
 import Checkbox from "./Checkbox";
 import styles from "./checks.module.css";
+import { useChoose } from "../context/UserContext";
 
 function Checks() {
+  const { tour, image, video,tourCheck,
+    ımageCheck,
+    videoCheck, } = useChoose();
   return (
     <div className={styles.list}>
-   
       <div className={styles.listColums}>
         <Tour />
-        <div>
-          <Checkbox />
+        <div onClick={() => tourCheck()}>
+          <Checkbox tour={tour}  />
         </div>
       </div>
-   
+
       <div className={styles.listColums}>
         <Images />
-        <div>
-          <Checkbox />
+        <div onClick={() => ımageCheck()}>
+          <Checkbox image={image}  />
         </div>
       </div>
 
       <div className={styles.listColums}>
         <Video />
-        <div>
-          <Checkbox />
+        <div onClick={() => videoCheck()}>
+          <Checkbox video={video}  />
         </div>
       </div>
-   
     </div>
   );
 }

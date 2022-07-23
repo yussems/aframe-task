@@ -3,6 +3,7 @@ import Logo from "../assets/Logo";
 import Studios from "../assets/Studios";
 import Checks from "../Component/Checks";
 import Progress from "../Component/Progress";
+import { Link } from "react-router-dom";
 import styles from "./taskOne.module.css";
 
 function TaskOne() {
@@ -24,7 +25,7 @@ function TaskOne() {
         </div>
         <Checks />
         <div>
-          <button>selam</button>
+          <Link to='/showState'>Show</Link>
         </div>
       </div>
 
