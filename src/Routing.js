@@ -19,7 +19,7 @@ function Routing() {
           Task Two
         </Link>
 
-        <a-scene >
+        <a-scene loading-screen='enabled: false' >
           <a-assets>
             <img
               crossOrigin="anonymous"
