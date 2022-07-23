@@ -1,6 +1,8 @@
 import { Link } from "react-router-dom";
 import { useChoose } from "./context/UserContext";
 import "./Routing.css";
+import ar from '../assets/ar.jpg'
+
 
 function Routing() {
   const val = useChoose();
@@ -22,7 +24,7 @@ function Routing() {
             <img
               crossOrigin="anonymous"
               id="sky"
-              src="https://cdn.elta360.com/1619279734104.jpg"
+              src={ar}
               alt="Home"
             />
           </a-assets>
