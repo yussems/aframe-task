@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import { useChoose } from "./context/UserContext";
 import "./Routing.css";
-import ar from '../assets/ar.jpg'
+import ar from './assets/ar.jpg'
 
 
 function Routing() {
@@ -19,7 +19,7 @@ function Routing() {
           Task Two
         </Link>
 
-        <a-scene>
+        <a-scene >
           <a-assets>
             <img
               crossOrigin="anonymous"
