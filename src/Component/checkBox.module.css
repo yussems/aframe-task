@@ -1,0 +1,12 @@
+.inputs {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    cursor: pointer;
+}
+label {
+    font-size: var(--f-size);
+    color: var(--head-color);
+    cursor: pointer;
+}

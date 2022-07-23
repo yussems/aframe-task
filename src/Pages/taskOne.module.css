@@ -1,0 +1,39 @@
+.container {
+  width: 100%;
+  margin: 0 auto;
+  max-width: 1920px;
+  max-height: 1080px;
+  padding-top: 116px;
+  background-color: white;
+}
+.content {
+  background-color: #f3f4f6;
+  max-width: 1572px;
+  max-height: 848px;
+  margin: 0 auto;
+}
+.head {
+  padding: 0px 3.5em;
+  margin-top: 40px;
+
+}
+.head .paraf {
+  font-size: 40px;
+  text-align: center;
+  color: var(--head-color);
+  line-height: 1.6;
+  letter-spacing: 1.2;
+}
+.head .lowParaf{
+    font-size: var(--f-size);
+    width: 100%;
+    text-align: center;
+}
+.logo{
+  max-width: 1572px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 15px;
+}

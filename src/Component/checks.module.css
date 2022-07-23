@@ -1,0 +1,15 @@
+.list {
+  margin-top: calc(var(--f-size) *2)  ;
+  padding: 0px 3.5em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap:100px;
+
+}
+.listColums {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 50px;
+}
