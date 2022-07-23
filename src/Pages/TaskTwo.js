@@ -1,5 +1,5 @@
 import React from "react";
-
+import ar from '../assets/ar.jpg'
 function TaskTwo() {
   return (
     <a-scene>
@@ -7,7 +7,7 @@ function TaskTwo() {
         <img
           crossOrigin="anonymous"
           id="sky"
-          src="https://cdn.elta360.com/1619279734104.jpg"
+          src={ar}
           alt="Home"
         />
       </a-assets>
