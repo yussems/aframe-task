@@ -12,7 +12,7 @@ function Checkbox({ tour,  image,  video, title,optionColor }) {
       ) : (
         <NoneTick optionColor={optionColor}/>
       )}
-      <label style={{color:optionColor}} htmlFor="choose1">{title}</label>
+      <label style={{color:optionColor }} htmlFor="choose1">{title}</label>
     </div>
   );
 }

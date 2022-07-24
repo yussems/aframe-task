@@ -13,7 +13,7 @@ function Mobile() {
     const html = document.querySelector('html')
     html.classList.remove('a-fullscreen')
   }, [])
-  
+
   const { tour, image, video, tourCheck, ımageCheck, videoCheck } = useChoose();
   return (
     <div className={styles.container}>
@@ -49,16 +49,17 @@ function Mobile() {
         <div className={styles.progress}>
           <Monitoring />
         </div>
-        <Paraf spanSize={40} parafSize={45} />
+        {/* spanSize={40} parafSize={45} */}
+        <Paraf  />
         <div className={styles.buttons}>
           <button onClick={() => tourCheck()} className={styles.button}>
-            <Checkbox optionColor={'white'} tour={tour} title={"Virtual Tour"} />
+            <Checkbox  optionColor={'white'} tour={tour} title={"Virtual Tour"} />
           </button>
           <button onClick={() => ımageCheck()} className={styles.button}>
-            <Checkbox optionColor={'white'} image={image} title={"Rendered Images"} />
+            <Checkbox  optionColor={'white'} image={image} title={"Rendered Images"} />
           </button>
           <button onClick={() => videoCheck()} className={styles.button}>
-            <Checkbox optionColor={'white'} video={video} title={"Animated Video"} />
+            <Checkbox  optionColor={'white'} video={video} title={"Animated Video"} />
           </button>
           <button  className={styles.button}><Link to='/showState'>Continue</Link></button>
         </div>

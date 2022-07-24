@@ -1,16 +1,26 @@
 .head {
-    padding: 0px 3.5em;
-    margin-top: 40px;
-  }
+  padding: 0px 3.5em;
+  margin-top: 40px;
+}
+.head .paraf {
+  font-size: 40px;
+  text-align: center;
+  color: var(--head-color);
+  line-height: 1.6;
+  letter-spacing: 1.2;
+}
+.head .lowParaf {
+  font-size: var(--f-size);
+  width: 100%;
+  text-align: center;
+}
+@media only screen and (max-width: 600px) {
   .head .paraf {
-    font-size: 40px;
-    text-align: center;
-    color: var(--head-color);
-    line-height: 1.6;
-    letter-spacing: 1.2;
+    font-size: 1.25rem;
   }
   .head .lowParaf {
-    font-size: var(--f-size);
-    width: 100%;
-    text-align: center;
+    font-size: 1rem;
+    margin-top: 1rem;
+    font-weight: lighter;
   }
+}
