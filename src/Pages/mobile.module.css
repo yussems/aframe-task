@@ -1,6 +1,7 @@
 .container {
   max-width: 1080px;
   width: 100%;
+  
 }
 @media only screen and (min-width: 1080px) {
   .container {
@@ -8,9 +9,11 @@
   }
 }
 .content {
-  max-width: 937px;
+  /* max-width: 937px; */
   width: 100%;
   margin: 0 auto;
+  padding-left: 4em;
+  padding-right: 4em;
   margin-top: 3em;
   margin-bottom: 3em;
 }
