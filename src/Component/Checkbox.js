@@ -3,16 +3,21 @@ import NoneTick from "../assets/NoneTick";
 import Tick from "../assets/Tick";
 import styles from "./checkBox.module.css";
 
-
-function Checkbox({ tour,  image,  video, title,optionColor }) {
+function Checkbox({ tour, image, video, title, optionColor }) {
   return (
-    <div className={styles.inputs} >
+    <div className={styles.inputs}>
       {tour || image || video ? (
-        <Tick  optionColor={optionColor}/>
+        <div>
+          <Tick optionColor={optionColor} />
+        </div>
       ) : (
-        <NoneTick optionColor={optionColor}/>
+        <div>
+          <NoneTick optionColor={optionColor} />
+        </div>
       )}
-      <label style={{color:optionColor }} htmlFor="choose1">{title}</label>
+      <label style={{ color: optionColor,justifySelf:'center' }} htmlFor="choose1">
+        {title}
+      </label>
     </div>
   );
 }

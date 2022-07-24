@@ -7,6 +7,8 @@ import { useChoose } from "../context/UserContext";
 import styles from "./mobile.module.css";
 import { Link } from "react-router-dom";
 import Monitoring from "../assets/mobile/Monitoring";
+import Logo from "../assets/Logo";
+import Studios from "../assets/Studios";
 
 function Mobile() {
   useEffect(() => {
@@ -62,6 +64,10 @@ function Mobile() {
             <Checkbox  optionColor={'white'} video={video} title={"Animated Video"} />
           </button>
           <button  className={styles.button}><Link to='/showState'>Continue</Link></button>
+        </div>
+        <div className={styles.logo}>
+          <Logo />
+          <Studios />
         </div>
       </div>
     </div>

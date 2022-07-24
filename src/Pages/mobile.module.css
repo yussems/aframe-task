@@ -43,3 +43,9 @@
 .button:nth-child(4) a {
   color: white;
 }
+.logo {
+  margin-top: var(--f-size);
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
