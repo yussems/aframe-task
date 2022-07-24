@@ -46,6 +46,8 @@
 }
 .imgContainer {
   margin-top: var(--f-size);
+  margin-left: 1rem;
+  margin-right: 1rem;
 }
 .noneChoose img {
   width: 100%;
