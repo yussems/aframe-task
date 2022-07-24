@@ -8,9 +8,9 @@ function Checkbox({ tour,  image,  video, title,optionColor }) {
   return (
     <div className={styles.inputs} >
       {tour || image || video ? (
-        <Tick/>
+        <Tick  optionColor={optionColor}/>
       ) : (
-        <NoneTick/>
+        <NoneTick optionColor={optionColor}/>
       )}
       <label style={{color:optionColor}} htmlFor="choose1">{title}</label>
     </div>

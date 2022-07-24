@@ -1,6 +1,6 @@
 import React from "react";
 
-function NoneTick() {
+function NoneTick({optionColor}) {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -14,7 +14,7 @@ function NoneTick() {
           data-name="Rectangle 576"
           transform="translate(449 716)"
           fill="none"
-          stroke="#0b2554"
+          stroke={optionColor ? optionColor : "#0b2554"}
           strokeWidth="2"
         >
           <rect width="33" height="33" rx="3" stroke="none" />

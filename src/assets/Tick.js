@@ -1,6 +1,6 @@
 import React from "react";
 
-function Tick() {
+function Tick({optionColor}) {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -14,7 +14,7 @@ function Tick() {
           data-name="Rectangle 576"
           transform="translate(449 716)"
           fill="none"
-          stroke="#0b2554"
+          stroke={optionColor ? optionColor : "#0b2554"}
           strokeWidth="2"
         >
           <rect width="33" height="33" rx="3" stroke="none" />
@@ -37,7 +37,7 @@ function Tick() {
             id="Checkbox"
             d="M7.033,12.231,0,5.2,1.427,3.771l5.606,5.5L16.308,0l1.427,1.427Z"
             transform="translate(0 2.61)"
-            fill="#0b2554"
+            fill={optionColor ? optionColor : "#0b2554"}
           />
         </g>
       </g>
