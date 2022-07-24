@@ -4,7 +4,7 @@ import Tick from "../assets/Tick";
 import styles from "./checkBox.module.css";
 
 
-function Checkbox({ tour,  image,  video, title }) {
+function Checkbox({ tour,  image,  video, title,optionColor }) {
   return (
     <div className={styles.inputs} >
       {tour || image || video ? (
@@ -12,7 +12,7 @@ function Checkbox({ tour,  image,  video, title }) {
       ) : (
         <NoneTick/>
       )}
-      <label  htmlFor="choose1">{title}</label>
+      <label style={{color:optionColor}} htmlFor="choose1">{title}</label>
     </div>
   );
 }

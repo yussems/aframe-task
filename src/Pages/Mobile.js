@@ -135,15 +135,15 @@ function Mobile() {
         <Paraf spanSize={40} parafSize={45} />
         <div className={styles.buttons}>
           <button onClick={() => tourCheck()} className={styles.button}>
-            <Checkbox tour={tour} title={"Virtual Tour"} />
+            <Checkbox optionColor={'white'} tour={tour} title={"Virtual Tour"} />
           </button>
           <button onClick={() => ımageCheck()} className={styles.button}>
-            <Checkbox image={image} title={"Rendered Images"} />
+            <Checkbox optionColor={'white'} image={image} title={"Rendered Images"} />
           </button>
           <button onClick={() => videoCheck()} className={styles.button}>
-            <Checkbox video={video} title={"Animated Video"} />
+            <Checkbox optionColor={'white'} video={video} title={"Animated Video"} />
           </button>
-          <button className={styles.button}><Link to='/showState'>Continue</Link></button>
+          <button  className={styles.button}><Link to='/showState'>Continue</Link></button>
         </div>
       </div>
     </div>
