@@ -13,8 +13,8 @@ function Studios() {
         data-name="CGI STUDIOS"
         transform="translate(0 36)"
         fill="#0b2554"
-        font-size="33"
-        font-family="SegoeUI, Segoe UI"
+        fontSize="33"
+        fontFamily="SegoeUI, Segoe UI"
       >
         <tspan x="0" y="0">
           CGI STUDIOS

@@ -15,21 +15,21 @@ function Checks() {
       <div className={styles.listColums}>
         <Tour />
         <div onClick={() => tourCheck()}>
-          <Checkbox tour={tour}  />
+          <Checkbox tour={tour} title={'Virtual Tour'} />
         </div>
       </div>
 
       <div className={styles.listColums}>
         <Images />
         <div onClick={() => ımageCheck()}>
-          <Checkbox image={image}  />
+          <Checkbox image={image}  title={'Rendered Images'}/>
         </div>
       </div>
 
       <div className={styles.listColums}>
         <Video />
         <div onClick={() => videoCheck()}>
-          <Checkbox video={video}  />
+          <Checkbox video={video} title={'Animated Video'} />
         </div>
       </div>
     </div>

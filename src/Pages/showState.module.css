@@ -1,23 +1,112 @@
+:root{
+    --red : #af4154;
+    --blue:#0b7fab;
+}
 .container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+}
+.center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.chooseOne {
+  flex: 1;
+  transition: 0.3s;
+  background-color: rebeccapurple;
+  transition: 0.3s;
+}
+.chooseOne:hover {
+  flex: 2;
+}
+.chooseTwo {
+  flex: 1;
+  background-color: aquamarine;
+  transition: 0.3s;
+}
+.chooseTwo:hover {
+  flex: 2;
+}
+.chooseThree {
+  flex: 1;
+  background-color: brown;
+  transition: 0.3s;
+}
+.chooseThree:hover {
+  flex: 2;
+}
+.noneChoose {
+    background-color: #F3F4F6;
     width: 100%;
     height: 100vh;
     display: flex;
-}
-.center {
-    display: flex;
-    align-items: center;
     justify-content: center;
+
 }
-.chooseOne{
-    flex: 1;
-    background-color: rebeccapurple;
-    
+.imgContainer{
+    margin-top: var(--f-size);
 }
-.chooseTwo{
-    flex: 1;
-    background-color: aquamarine;
+.noneChoose img{
+    width: 100%;
+    max-width: 600px;
+    border-radius: 12px;
+    height: auto;
 }
-.chooseThree{
+.btnGroup {
+    margin-top: var(--f-size);
+    display: flex;
+    justify-content: space-between;
+}
+@media only screen and (max-width: 600px){
+    .btnGroup{
+        display: flex;
+        flex-direction: column;
+        gap: var(--f-size);
+        align-items: center;
+    }
+} 
+
+.btn:nth-child(1){
+    background-color: var(--blue);
+}
+.btn:nth-child(1):active{
+    background-color: var(--red);
+}
+.btn:nth-child(2){
+    background-color: var(--red);
+}
+.btn:nth-child(2):active{
+    background-color: var(--blue);
+}
+.btn{
+    width: 250px;
+    padding: 15px 32px;
+    border: none;
+    transition: .2s;
+    border-radius: 12px;
+}
+.btn:hover{
+    transform: scale(1.2);
+}
+.btn a {
+    color: #F3F4F6;
+    font-size: var(--f-size);
+
+}
+
+@media only screen and (max-width: 600px) {
+  .container {
+    flex-direction: column;
+  }
+  .chooseThree:hover {
     flex: 1;
-    background-color: brown;
+  }
+  .chooseOne:hover {
+    flex: 1;
+  }
+  .chooseTwo:hover {
+    flex: 1;
+  }
 }
