@@ -38,20 +38,21 @@ function ShowState() {
         className={`${styles.chooseOne} ${styles.center}`}
         style={chooseShow(tour)}
       >
-        <Link to={"/virtualtour"}>Virtual Tour</Link>
+        <Link to={"/virtualtour"} className={styles.link}>Virtual Tour</Link>
       </div>
       <div
         className={`${styles.chooseTwo} ${styles.center}`}
         style={chooseShow(image)}
       >
-        <Link to={"/renderedimage"}>Rendered Image</Link>
+        <Link to={"/renderedimage"} className={styles.link}>Rendered Image</Link>
       </div>
 
       <div
         className={`${styles.chooseThree} ${styles.center}`}
         style={chooseShow(video)}
       >
-        <Link to={"/arvideo"}>Animated Video</Link>
+
+        <Link to={"/arvideo"} className={styles.link}>Animated Video</Link>
       </div>
     </div>
   );
