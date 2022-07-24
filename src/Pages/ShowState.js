@@ -9,7 +9,6 @@ function ShowState() {
   const chooseShow = (item) =>
     item ? { display: "flex" } : { display: "none" };
 
-  console.log(!!tour, !!image, !!video);
   if (tour === false && image === false && video === false) {
     return (
       <div className={styles.noneChoose}>

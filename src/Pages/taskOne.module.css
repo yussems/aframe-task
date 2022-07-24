@@ -5,29 +5,39 @@
   padding-top: 116px;
   background-color: white;
 }
+@media only screen and (max-width: 1080px) {
+  .container {
+    display: none;
+  }
+}
 .content {
   background-color: #f3f4f6;
   max-width: 1572px;
   margin: 0 auto;
+  padding-bottom: calc(var(--f-size) * 2);
 }
-.head {
-  padding: 0px 3.5em;
-  margin-top: 40px;
+
+.btnContainer {
+  max-width: 850px;
+  margin: 0 auto;
+  margin-top: calc(var(--f-size) * 2);
+  text-align: right;
+}
+.btn {
+  background-color: #1d62e2;
+  transition: 0.3s;
+  padding: 18px 55px;
 
 }
-.head .paraf {
-  font-size: 40px;
-  text-align: center;
-  color: var(--head-color);
-  line-height: 1.6;
-  letter-spacing: 1.2;
+.btn:hover {
+  background-color: var(--f-color);
 }
-.head .lowParaf{
-    font-size: var(--f-size);
-    width: 100%;
-    text-align: center;
+.btn a {
+  color: white;
+
+  font-size: var(--f-size);
 }
-.logo{
+.logo {
   max-width: 1572px;
   margin: 0 auto;
   display: flex;

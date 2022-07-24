@@ -4,12 +4,12 @@
   --f-color: #0b2554;
   --head-color:#09050D;
 }
+
 body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
-  overflow-y: scroll;
 }
 
 code {

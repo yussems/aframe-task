@@ -5,35 +5,31 @@ import Checks from "../Component/Checks";
 import Progress from "../Component/Progress";
 import { Link } from "react-router-dom";
 import styles from "./taskOne.module.css";
+import Paraf from "../Component/Paraf";
+import Mobile from "./Mobile";
 
 function TaskOne() {
   return (
-    <div className={styles.container}>
-      <div className={styles.content}>
-        <Progress />
-        <div className={styles.head}>
-          <p className={styles.paraf}>Wonderful!</p>
-          <p className={styles.paraf}>
-            We already know how to turn your project into spectacular
-            visualization
-          </p>
-
-          <p className={styles.lowParaf}>
-            The last step is to choose the visualization service/services you
-            need, and we’re ready to begin crafting your project.
-          </p>
+    <>
+    <Mobile />
+      <div className={styles.container}>
+        <div className={styles.content}>
+          <Progress />
+          <Paraf />
+          <Checks />
+          <div className={styles.btnContainer}>
+            <button className={styles.btn}>
+              <Link to="/showState">Contınue</Link>
+            </button>
+          </div>
         </div>
-        <Checks />
-        <div>
-          <Link to='/showState'>Show</Link>
+
+        <div className={styles.logo}>
+          <Logo />
+          <Studios />
         </div>
       </div>
-
-      <div className={styles.logo}>
-        <Logo />
-        <Studios />
-      </div>
-    </div>
+    </>
   );
 }
 

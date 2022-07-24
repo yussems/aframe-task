@@ -1,0 +1,16 @@
+.head {
+    padding: 0px 3.5em;
+    margin-top: 40px;
+  }
+  .head .paraf {
+    font-size: 40px;
+    text-align: center;
+    color: var(--head-color);
+    line-height: 1.6;
+    letter-spacing: 1.2;
+  }
+  .head .lowParaf {
+    font-size: var(--f-size);
+    width: 100%;
+    text-align: center;
+  }

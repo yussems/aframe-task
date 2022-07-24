@@ -1,0 +1,37 @@
+.container {
+  max-width: 1080px;
+  width: 100%;
+}
+@media only screen and (min-width: 1080px) {
+  .container {
+    display: none;
+  }
+}
+.content {
+  max-width: 937px;
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 3em;
+  margin-bottom: 3em;
+}
+.progress {
+  display: flex;
+  justify-content: center;
+  margin-top: 5em;
+}
+
+.buttons{
+    margin-top: 3em;
+    display: flex;
+    flex-direction: column;
+    gap: var(--f-size);
+}
+.button{
+    width: 100%;
+    padding: 35px 55px;
+    border-radius: 12px;
+    border: none;
+    /* background-color: var(--f-color); */
+    color: white;
+    font-size: 45px;
+}
