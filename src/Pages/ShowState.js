@@ -1,10 +1,15 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 import { useChoose } from "../context/UserContext";
 import styles from "./showState.module.css";
 import pill from '../assets/pill.jpg'
 
 function ShowState() {
+  useEffect(() => {
+    const html = document.querySelector('html')
+    html.classList.remove('a-fullscreen')
+  }, [])
+  
   const { tour, image, video } = useChoose();
   const chooseShow = (item) =>
     item ? { display: "flex" } : { display: "none" };

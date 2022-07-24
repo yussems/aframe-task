@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Checkbox from "../Component/Checkbox";
 import MobileButtons from "../Component/MobileButton";
 import MobileButton from "../Component/MobileButton";
@@ -10,6 +10,11 @@ import styles from "./mobile.module.css";
 import { Link } from "react-router-dom";
 
 function Mobile() {
+  useEffect(() => {
+    const html = document.querySelector('html')
+    html.classList.remove('a-fullscreen')
+  }, [])
+  
   const { tour, image, video, tourCheck, ımageCheck, videoCheck } = useChoose();
   return (
     <div className={styles.container}>

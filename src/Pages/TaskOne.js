@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Logo from "../assets/Logo";
 import Studios from "../assets/Studios";
 import Checks from "../Component/Checks";
@@ -9,6 +9,11 @@ import Paraf from "../Component/Paraf";
 import Mobile from "./Mobile";
 
 function TaskOne() {
+  useEffect(() => {
+    const html = document.querySelector('html')
+    html.classList.remove('a-fullscreen')
+  }, [])
+  
   return (
     <>
     <Mobile />
