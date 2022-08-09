@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import "./Routing.css";
-import ar from './assets/ar.jpg'
+import arTwo from './assets/arTwo.jpg'
 
 
 function Routing() {
@@ -8,13 +8,13 @@ function Routing() {
     <div className="container">
       <div className="left">
         <Link to="taskone" className="left-btn">
-          Task One
+          Choose destination
         </Link>
       </div>
 
       <div className="right">
         <Link to="tasktwo" className="right-btn">
-          Task Two
+          Look Around
         </Link>
 
         <a-scene loading-screen='enabled: false' >
@@ -22,7 +22,7 @@ function Routing() {
             <img
               crossOrigin="anonymous"
               id="sky"
-              src={ar}
+              src={arTwo}
               alt="Home"
             />
           </a-assets>

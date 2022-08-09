@@ -29,10 +29,10 @@ function TaskOne() {
           </div>
         </div>
 
-        <div className={styles.logo}>
+        {/* <div className={styles.logo}>
           <Logo />
           <Studios />
-        </div>
+        </div> */}
       </div>
     </>
   );

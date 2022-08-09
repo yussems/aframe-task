@@ -65,10 +65,10 @@ function Mobile() {
           </button>
           <button  className={styles.button}><Link to='/showState'>Continue</Link></button>
         </div>
-        <div className={styles.logo}>
+        {/* <div className={styles.logo}>
           <Logo />
           <Studios />
-        </div>
+        </div> */}
       </div>
     </div>
   );

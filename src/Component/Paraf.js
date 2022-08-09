@@ -7,12 +7,10 @@ function Paraf({spanSize,parafSize}) {
     <div className={styles.head}>
           <p style={ size(parafSize)} className={styles.paraf}>Wonderful!</p>
           <p style={size(parafSize) } className={styles.paraf}>
-            We already know how to turn your project into spectacular
-            visualization
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem ratione corrupti porro error quod, repudiandae, laboriosam exercitationem, ducimus dolor blanditiis neque quasi rerum vero culpa sint maiores est eius aliquam.
           </p>
           <p style={size(spanSize)} className={styles.lowParaf}>
-            The last step is to choose the visualization service/services you
-            need, and we’re ready to begin crafting your project.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, doloremque!
           </p>
         </div>
   )
